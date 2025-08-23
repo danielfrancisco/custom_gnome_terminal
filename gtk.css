@@ -1,0 +1,14 @@
+headerbar, .header-bar {
+  
+  background-color: black;
+  border: none;
+  
+}
+
+headerbar:not(:backdrop),
+.header-bar:not(:backdrop) {
+  background-image: none;
+  background-color: black !important; 
+  border: none;
+}
+
