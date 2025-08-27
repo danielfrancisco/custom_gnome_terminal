@@ -1,7 +1,7 @@
 headerbar, .header-bar {
   background-color: #181818;
   border: none;
-  
+  z-index: 2;
 }
 
 headerbar:not(:backdrop),
@@ -25,14 +25,15 @@ terminal-window headerbar menubutton:not(.titlebutton),
 terminal-window headerbar togglebutton:not(.titlebutton),
 terminal-window headerbar button.flat:not(.titlebutton),
 terminal-window headerbar button.image-button:not(.titlebutton) {
-  opacity: 0;           
-  min-width: 0;
-  min-height: 0;
-  padding: 0;
-  margin: 0;
-  display: none;
-  visibility: hidden;
-  border: none;
+    
 }
 
 
+scrollbar slider {
+    background-color: #696969; 
+    border-radius: 5px;      
+}
+
+scrollbar slider:hover {
+    background-color: #888888; 
+}
